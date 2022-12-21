@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Table from "./components/Table";
 
-function App() {
+// let data = [
+//   { Roll: "001", Name: "Ashish", Marks: "96" },
+//   { Roll: "002", Name: "Ramesh", Marks: "100" },
+//   { Roll: "003", Name: "Rahul", Marks: "100" }
+// ];
+
+let data = [
+  { Roll: "001", Name: "Ashish", Subject: "Math", Marks: "96" },
+  { Roll: "002", Name: "Ramesh", Subject: "Science", Marks: "100" },
+  { Roll: "003", Name: "Rahul", Subject: "English", Marks: "100" },
+];
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="mt-6">
+      <Table TableData={data} />
     </div>
   );
 }
-
-export default App;
